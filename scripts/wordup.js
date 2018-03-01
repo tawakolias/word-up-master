@@ -128,11 +128,13 @@ function render() {
 
     // clear stuff
     $("#allowed-letters").empty();
-    $("#word-submissions").empty();
+    $("#textbox").removeClass("bad-attempt").attr("disabled",false);
     // TODO 10
     // Add a few things to the above code block (underneath "// clear stuff").
     $("#word-submissions").empty();
+    $("#textbox").prop("disabled", false).val("");
     $(".disallowed-letter").remove();
+
 
     // reveal the #game container
     $("#game").show();
